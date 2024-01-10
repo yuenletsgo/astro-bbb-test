@@ -1,0 +1,49 @@
+html {
+  font-family: 'Karla', 'Inter', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  /* max-width: 1440px; */
+  min-height: 100vh;
+  /* padding: 1rem 5vw; */
+  line-height: 1.5;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a.dark {
+  color: white;
+}
+p, p>li {
+  font-family: 'Merriweather', serif;
+  font-weight: 100;
+}
+/* html.dark {
+  background-color: #0d0950;
+  color: #fff;
+} */
+
+/* .dark .nav-links a {
+  color: #fff;
+} */
+
+/* nav styles */
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 636px) {
+}

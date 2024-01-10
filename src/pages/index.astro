@@ -1,20 +1,14 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PlaceholderLayout from '../layouts/PlaceholderLayout.astro';
+import Greeting from '../components/Greeting.jsx';
 
+const pageTittle = "Yu En Design | Website under construction";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
 
-		<h1>My first Astro project.. update:13:12</h1>
-	</body>
-</html>
+<PlaceholderLayout pageTittle={pageTittle}>
+	<h1 style="font-family: 'Merriweather';" class="text-5xl mt-24">Website<br><span class="pl-2">under</span><br><span class="pl-2">construction</span></h1>
+	<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari", "你好", "안녕하세요", "こんにちは", "Bonjour", "Helló", "Hei"]} />
+</PlaceholderLayout>
+

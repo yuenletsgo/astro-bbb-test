@@ -1,31 +1,60 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+// import ReactMotion from '../components/ReactMotion.jsx';
 
+const pageTittle = "About";
+
+const identity = {
+	fistName: "Sarah",
+	country: "Canada",
+	occupation: "Tech",
+	hobbies: ["photography", "birdwatching", "baseball"],
+};
+
+const tools = ["Figma","Ps/Ai/Ae", "Html", "Css", "Javascript", "React", "NuxtJs(VUE)", "Astro"];
+const skills = ["Product Design", "Service Design", "UI/UX", "Motion Prototyping", "Interaction Design", "Front-end Development"];
+
+// const happy = true;
+// const finished = true;
+// const goal = 3;
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
+<BaseLayout pageTittle={pageTittle}>
+	<h1>{pageTittle}</h1>
+	<!-- <ReactMotion client:load /> -->
+	<p>
+		I am working through Astro's introductory tutorial. This is the second
+		page on my website, and it's the first one I built myself!
+	</p>
 
-    <h1>About Me</h1>
-    <h2>... and my new Astro site!</h2>
+	<p>
+		This site will update as I complete more of the tutorial, so keep checking
+		back and see how my journey is going!
+	</p>
+	<p>Here are a few facts about me:</p>
+	<ul>
+		<li>My name is {identity.fistName}</li>
+		<li>I live in {identity.country} and I work as a {identity.occupation}</li>
+		{identity.hobbies.length >= 2 &&
+			<li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+		}
+	</ul>
+	<div class="h-[0.5px] w-full bg-slate-300 mb-4"></div>
+	<div class="grid md:grid-cols-2 grid-cols-1 w-full">
+		<p class="text-sm mb-12">Tools</p>
+		<ul class="p-0 m-0 list-none">
+			{tools.map((tool => <li class="md:pl-2 pl-0">{tool}</li><div class="mt-3 h-[0.5px] w-full bg-slate-300 mb-4 last:hidden"></div>))}
+		</ul>
+	</div>
 
-    <p>
-      I am working through Astro's introductory tutorial. This is the second
-      page on my website, and it's the first one I built myself!
-    </p>
-
-    <p>
-      This site will update as I complete more of the tutorial, so keep checking
-      back and see how my journey is going!
-    </p>
-  </body>
-</html>
+	<div class="h-[0.5px] w-full bg-slate-300 mb-4 mt-20"></div>
+	<div class="grid md:grid-cols-2 grid-cols-1 w-full">
+		<p class="text-sm mb-12">skills</p>
+		<ul class="p-0 m-0 list-none">
+			{skills.map((skill => <li class="md:pl-2 pl-0">{skill}</li><div class="mt-3 h-[0.5px] w-full bg-slate-300 mb-4 last:hidden"></div>))}
+		</ul>
+	</div>
+	<!-- {happy && <p>I am happy</p>}
+	{finished && <p>Finished?</p>}
+	{goal === 3 ? <p>My goal is to finish in {goal} days.</p> : <p>My goal is not 3 days.</p>} -->
+</BaseLayout>	
