@@ -9,7 +9,6 @@ const pageTittle = "Contact";
   method="POST"
   data-netlify="true"
   action="https://docs.astro.build/zh-tw/tutorials/add-view-transitions/"
-  action="https://hooks.airtable.com/workflows/v1/genericWebhook/appK7foBa71nKKhzT/wfl9sdEq40HlpHRgN/wtrKtcozkPMU861Qd"
   >
   <p>
     <label>Your Name: <input type="text" name="name" /></label>
@@ -27,6 +26,13 @@ const pageTittle = "Contact";
     <label>Message: <textarea name="message"></textarea></label>
   </p>
   <p>
-    <button type="submit">Send</button>
+    <button
+      type="submit"
+      formaction="https://hooks.airtable.com/workflows/v1/genericWebhook/appK7foBa71nKKhzT/wfl9sdEq40HlpHRgN/wtrKtcozkPMU861Qd"
+    >Send</button>
   </p>
 </form>
+
+<script>
+
+</script>
