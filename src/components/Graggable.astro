@@ -1,0 +1,96 @@
+---
+
+---
+<div class="mb-10 mt-10 md:mt-20 text-center">
+  <p class="text-2xl md:text-3xl -mb-1">Ohhh, I also doodle a little</p>
+  <p style="font-weight: 300;" class="text-sm md:text-base text-neutral-400">Drag the images to dig through the stash</p>
+</div>
+
+<div class="w-full flex h-auto md:h-[80rem] flex-wrap gap-0 relative" id="container">
+  <div class="draggable w-1/3 md:w-auto translate-x-[2vw] -translate-y-[2vw]">
+    <img class="h-[100px] md:h-[300px]" src="../src/assets/draws/1.png" alt="">
+  </div>
+  <div class="draggable w-1/3 md:w-auto">
+    <img class="h-[100px] md:h-[300px] drop-shadow-sm" src="../src/assets/draws/3.png" alt="">
+  </div>
+  <div class="draggable w-1/3 md:w-auto rotate-3">
+    <img class="h-[100px] md:h-[300px]" src="../src/assets/draws/4.png" alt="">
+  </div>
+  <div class="draggable w-1/3 md:w-auto">
+    <img class="h-[100px] md:h-[300px] drop-shadow-sm -rotate-3" src="../src/assets/draws/5.png" alt="">
+  </div>
+  <div class="draggable w-1/3 md:w-auto">
+    <img class="h-[100px] md:h-[300px]" src="../src/assets/draws/6.png" alt="">
+  </div>
+  <div class="draggable w-1/3 md:w-auto translate-x-[8vw] -translate-y-[5vw]">
+    <img class="h-[100px] md:h-[300px] drop-shadow-sm" src="../src/assets/draws/2.gif" alt="">
+  </div>
+  <div class="draggable w-1/3 md:w-auto translate-x-[5vw] -translate-y-[5vw]">
+    <img class="h-[100px] md:h-[300px]" src="../src/assets/draws/7.png" alt="">
+  </div>
+  <div class="draggable w-1/3 md:w-auto translate-x-[10vw] -translate-y-[8vw] rotate-6">
+    <img class="h-[100px] md:h-[300px]" src="../src/assets/draws/8.png" alt="">
+  </div>
+  <div class="draggable w-1/3 md:w-auto translate-x-[5vw] -translate-y-[10vw]">
+    <img class="h-[100px] md:h-[300px]" src="../src/assets/draws/1.gif" alt="">
+  </div>
+</div>
+
+<style>
+  .draggable {
+    touch-action: none;
+    cursor: move;
+  }
+</style>
+
+<script is:inline>
+// target elements with the "draggable" class
+interact('.draggable')
+  .draggable({
+    // enable inertial throwing
+    inertia: true,
+    // keep the element within the area of it's parent
+    modifiers: [
+      interact.modifiers.restrictRect({
+        restriction: 'parent',
+        endOnly: true
+      })
+    ],
+    // enable autoScroll
+    autoScroll: false,
+
+    listeners: {
+      // call this function on every dragmove event
+      move: dragMoveListener,
+
+      // call this function on every dragend event
+      end (event) {
+        var textEl = event.target.querySelector('p')
+
+        textEl && (textEl.textContent =
+          'moved a distance of ' +
+          (Math.sqrt(Math.pow(event.pageX - event.x0, 2) +
+                     Math.pow(event.pageY - event.y0, 2) | 0))
+            .toFixed(2) + 'px')
+      }
+    }
+  })
+
+function dragMoveListener (event) {
+  var target = event.target
+  // keep the dragged position in the data-x/data-y attributes
+  var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx
+  var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy
+
+  // translate the element
+  target.style.transform = 'translate(' + x + 'px, ' + y + 'px)'
+
+  // update the posiion attributes
+  target.setAttribute('data-x', x)
+  target.setAttribute('data-y', y)
+}
+
+// this function is used later in the resizing and gesture demos
+window.dragMoveListener = dragMoveListener
+
+</script>

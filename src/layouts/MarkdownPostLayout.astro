@@ -4,15 +4,21 @@ import BlogListPageLayout from './BlogListPageLayout.astro';
 const { frontmatter } = Astro.props;
 ---
 <BlogListPageLayout pageTittle={frontmatter.title}>
-  <div ></div>
-  <h1>{frontmatter.title}</h1>
-  <p>Published on: {frontmatter.pubDate.slice(0,10)}</p>
-  <p>Written by: <a href="/about/">{frontmatter.author}</a></p>
-  <div class="tags flex">
-    {frontmatter.tags.map((tag) => (
-      <p class="mr-4"><a href={`/tags/${tag}`}>{tag}</a></p>
-    ))}
-  </div>
-  <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
-  <slot />
+  <div class="h-[12rem]"></div>
+    <h1 class="mt-5 px-5">{frontmatter.title}</h1>
+    <h2 class="text-slate-400 mb-6 text-lg px-5">－ {frontmatter.description}</h2>
+    <!-- <p>Published on: {frontmatter.pubDate.slice(0,10)}</p>
+    <p>Written by: <a href="/about/">{frontmatter.author}</a></p> -->
+    <img class="w-full" src={frontmatter.image.url} alt={frontmatter.image.alt} />
+    <div class="px-5 mt-10">
+      <!-- <div class="tags flex flex-wrap">
+        {frontmatter.tags.map((tag) => (
+          <p class="mr-4 text-[12px]"><a class="text-neutral-400 border border-neutral-400 border-solid px-5 py-1 rounded-full" href={`/tags/${tag}`}>{tag}</a></p>
+        ))}
+      </div> -->
+      <slot />
+      <div class="mt-10">
+        <a class="text-lg text-neutral-400" href="/work"><span class="mr-4">←</span>Back to work list</a>
+      </div>
+    </div>
 </BlogListPageLayout>

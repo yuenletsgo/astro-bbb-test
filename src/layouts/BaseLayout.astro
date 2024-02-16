@@ -5,8 +5,10 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ThemeIcon from '../components/ThemeIcon.astro';
 import Bio from '../components/Bio.astro';
+import Graggable from "../components/Graggable.astro";
 
 import '../styles/global.css';
+
 
 const {pageTittle} = Astro.props;
 ---
@@ -23,8 +25,19 @@ const {pageTittle} = Astro.props;
 		<title>{pageTittle}</title>
 		<ViewTransitions />
 		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+		<script is:inline src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+		<!-- Google tag (gtag.js) -->
+		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-X8ZCNE99LV"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-X8ZCNE99LV');
+		</script>
 	</head>
-	<body class="bg-neutral-50 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-50">
+	<body class="-mt-[36px] bg-neutral-50 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-50">
 		<Header />
 		<ThemeIcon />
 		<Bio />
@@ -32,8 +45,11 @@ const {pageTittle} = Astro.props;
 		<main transition:animate="slide" class="w-full px-6 max-w-[1028px] m-auto pt-10">
 			<slot />
 		</main>
+		<div class="-mb-[3rem] md:-mb-40">
+			<Graggable />
+		</div>
 		<Footer />
-    <script>
+		<script>
 			import "../scripts/menu.js";
 		</script>
 	</body>

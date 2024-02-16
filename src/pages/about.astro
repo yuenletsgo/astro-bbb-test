@@ -4,41 +4,27 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 const pageTittle = "About";
 
-const identity = {
-	fistName: "Sarah",
-	country: "Canada",
-	occupation: "Tech",
-	hobbies: ["photography", "birdwatching", "baseball"],
-};
-
+const bios =["Creating strategic, result-driven designs and guiding communication to accomplish specific business objectives for clients.",
+"Developing design concepts that align with clients' needs and translate complex ideas into an intuitive user experience. This requires being a strategic and creative thinker who can understand clients' needs and simplify complex ideas into a user-friendly digital experience.",
+"Keeping up-to-date with web design software, tools, and trends to produce innovative and effective website designs. Collaborating with marketing, content, and development teams to ensure timely and budget-friendly website or app development and launch.",
+"Skilled in motion animation and video editing as an amateur."
+];
 const tools = ["Figma","Ps/Ai/Ae", "Html", "Css", "Javascript", "React", "NuxtJs(VUE)", "Astro"];
 const skills = ["Product Design", "Service Design", "UI/UX", "Motion Prototyping", "Interaction Design", "Front-end Development"];
 
-// const happy = true;
-// const finished = true;
-// const goal = 3;
 ---
 
 <BaseLayout pageTittle={pageTittle}>
-	<h1>{pageTittle}</h1>
 	<!-- <ReactMotion client:load /> -->
-	<p>
-		I am working through Astro's introductory tutorial. This is the second
-		page on my website, and it's the first one I built myself!
-	</p>
+	<div class="text-lg leading-7 mt-2 md:mt-8 mb-16 text-slate-800 dark:text-neutral-50">
+		<div>
+			Yu En is a UI/UX designer with over 7 years of experience and a self-taught front-end developer (and have recently dip my toes into service design). Specializing in web design, e-commerce web design and developing new tech/business concept products. I loves engaging with clients to understand their current business needs and pain points, and then translating them into usable system flows. Collaborate with front-end and back-end engineers, taking into consideration technical limitations, to deliver product selections to project managers and stakeholders. I starts from ideation/business goals, moves on to concept design and production, conducts tests, analyzes data, and continuously improves the product.
+		</div>
 
-	<p>
-		This site will update as I complete more of the tutorial, so keep checking
-		back and see how my journey is going!
-	</p>
-	<p>Here are a few facts about me:</p>
-	<ul>
-		<li>My name is {identity.fistName}</li>
-		<li>I live in {identity.country} and I work as a {identity.occupation}</li>
-		{identity.hobbies.length >= 2 &&
-			<li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-		}
-	</ul>
+		<ul class="pl-8 marker:text-slate-400 dark:marker:text-neutral-500">
+			{bios.map((bio => <li class="mb-3">{bio}</li>))}
+		</ul>
+	</div>
 	<div class="h-[0.5px] w-full bg-slate-300 mb-4"></div>
 	<div class="grid md:grid-cols-2 grid-cols-1 w-full">
 		<p class="text-sm mb-12">Tools</p>
@@ -54,7 +40,8 @@ const skills = ["Product Design", "Service Design", "UI/UX", "Motion Prototyping
 			{skills.map((skill => <li class="md:pl-2 pl-0">{skill}</li><div class="mt-3 h-[0.5px] w-full bg-slate-300 mb-4 last:hidden"></div>))}
 		</ul>
 	</div>
-	<!-- {happy && <p>I am happy</p>}
-	{finished && <p>Finished?</p>}
-	{goal === 3 ? <p>My goal is to finish in {goal} days.</p> : <p>My goal is not 3 days.</p>} -->
+	<div class="mt-36">
+		<p class="text-2xl md:text-3xl">See something of interest ?</p>
+		<a href="/contact-test" style="font-family: 'Merriweather', serif; font-weight: 300;" class="text-xl md:text-2xl text-neutral-400">Drop me a line !</a>
+	</div>
 </BaseLayout>	

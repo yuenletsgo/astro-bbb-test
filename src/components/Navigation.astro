@@ -4,7 +4,7 @@ import '../styles/global.css';
 const {testWord} = Astro.props;
 ---
 <div x-data="{ open: false }">
-  <div :class=" open ? 'w-96' : 'w-32' " class="nav-links flex items-center gap-8 bg-neutral-900 dark:bg-neutral-100 px-8 py-2 rounded-full fixed top-10 scale-150 origin-top-left transition-all duration-500">
+  <div :class=" open ? 'w-96' : 'w-32' " class="z-50 nav-links flex items-center gap-8 bg-neutral-900 dark:bg-neutral-100 px-8 py-2 rounded-full fixed top-10 scale-150 origin-top-left transition-all duration-500">
     <a class='text-white dark:text-black' href="/">R</a>
     <div class="flex justify-center items-center gap-8 transform-all">
       <div @click="open =! open" class='flex flex-col w-4 justify-end group transition-all cursor-pointer'>
@@ -24,7 +24,7 @@ const {testWord} = Astro.props;
           x-transition:leave="transition-all duration-300 delay-100"
           x-transition:leave-start="opacity-100"
           x-transition:leave-end="opacity-0"
-          class='text-white dark:text-black' href="/about/" data-astro-reload>About</a>
+          class='text-white dark:text-black' href="/about" data-astro-reload>About</a>
         <a
           x-show="open"
           x-transition:enter="transition-all duration-300 delay-100"
@@ -33,7 +33,7 @@ const {testWord} = Astro.props;
           x-transition:leave="transition-all duration-300 delay-50"
           x-transition:leave-start="opacity-100"
           x-transition:leave-end="opacity-0"
-          class='text-white dark:text-black' href="/blog/">Work</a>
+          class='text-white dark:text-black' href="/work">Work</a>
         <a
           x-show="open"
           x-transition:enter="transition-all duration-300 delay-300"
@@ -42,7 +42,7 @@ const {testWord} = Astro.props;
           x-transition:leave="transition-all duration-300 delay-0"
           x-transition:leave-start="opacity-100"
           x-transition:leave-end="opacity-0"
-          class='text-white dark:text-black' href="/tags/">Contact</a>
+          class='text-white dark:text-black' href="mailto:hello@yuenw.design?subject=Say Hi to Yu En&body=Hello there! 💖 Super excited to see you! Thanks a ton for giving this button a click!🌟 I’m looking forward to talking to you.">Contact</a>
       </div>
     </div>
   </div>

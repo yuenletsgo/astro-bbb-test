@@ -21,7 +21,7 @@ export default {
 				// 'h1': { fontSize: 'clamp(2.5rem, -1.5rem + 8vw, 4rem)' },
         'h2': { fontSize: 'clamp(1rem,1.5vw,3rem)', lineHeight: '95%', fontWeight: '300', letterSpacing: '0.035rem' },
         'h3': { fontSize: 'clamp(1rem,1.5vw,3rem)', lineHeight: '95%', fontWeight: '300', letterSpacing: '0.035rem' },
-				'h4': { fontSize: 'clamp(1.25rem,1.67vw,1.625rem)', lineHeight: '0' },
+				'h4': { fontSize: 'clamp(.8rem,1.25vw,1.625rem)', lineHeight: '0' },
 				'h5': { fontSize: 'clamp(.825rem,1.1vw,1.07rem)', lineHeight: '135%' },
 				'p': { fontSize: '1rem' },
       })

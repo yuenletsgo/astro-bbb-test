@@ -1,9 +1,14 @@
 ---
 import { ViewTransitions } from "astro:transitions";
+import { fade } from "astro:transitions";
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ThemeIcon from '../components/ThemeIcon.astro';
+import Bio from '../components/Bio.astro';
+import Graggable from "../components/Graggable.astro";
 
 import '../styles/global.css';
+
 
 const {pageTittle} = Astro.props;
 ---
@@ -11,7 +16,7 @@ const {pageTittle} = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,600;1,400;1,500;1,600&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -20,18 +25,23 @@ const {pageTittle} = Astro.props;
 		<title>{pageTittle}</title>
 		<ViewTransitions />
 		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+		<script is:inline src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 	</head>
-	<body class="bg-neutral-50 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-50 max-w-[1028px]">
+	<body class="-mt-[36px] bg-neutral-50 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-50">
+		<Header />
 		<ThemeIcon />
-		<main class="w-full px-6 m-auto pt-10">
+		<Bio />
+		<!-- <h1 class="pt-20" transition:animate={fade({ duration: '2s' })}>My first Astro project.. update:13:12 {pageTittle}</h1> -->
+		<main transition:animate="slide" class="w-full px-6 max-w-[1028px] m-auto pt-10">
 			<slot />
 		</main>
+		<div class="-mb-[3rem] md:-mb-40">
+			<Graggable />
+		</div>
 		<Footer />
-    <script>
-			// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-      let vh = window.innerHeight * 0.01;
-      // Then we set the value in the --vh custom property to the root of the document
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
+		<script>
+			import "../scripts/menu.js";
 		</script>
 	</body>
 </html>

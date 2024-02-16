@@ -1,16 +1,24 @@
 html {
   font-family: 'Karla', 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0 auto;
   width: 100%;
   /* max-width: 1440px; */
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
   /* padding: 1rem 5vw; */
   line-height: 1.5;
   position: relative;
+  overflow-x: hidden;
+}
+main {
+  min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  min-height: calc((var(--vh, 1vh) * 100) - 200px);
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 * {
@@ -47,4 +55,30 @@ p, p>li {
 }
 
 @media screen and (min-width: 636px) {
+}
+h4{
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: #FFB4B4;
+}
+
+::selection {
+  color: black;
+  background: #FFB4B4;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

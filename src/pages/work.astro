@@ -8,12 +8,12 @@ const pageTittle = "Work";
 
 
 <BaseLayout pageTittle={pageTittle}>
-  <h1 class="text-xl text-slate-500">Seleted projects</h1>
   <ul class="flex flex-wrap list-none no-underline px-0">
     {allPosts.map((post)=> <li class="py-5 px-0">
       <BlogPost url={post.url}
       title={post.frontmatter.title}
       image={post.frontmatter.image}
+      description={post.frontmatter.description}
       />
       </li>)}
   </ul>

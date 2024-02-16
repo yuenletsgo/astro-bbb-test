@@ -1,14 +1,20 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import PlaceholderLayout from '../layouts/PlaceholderLayout.astro';
-import Greeting from '../components/Greeting.jsx';
+import BlogPost from '../layouts/BlogPost.astro';
 
-const pageTittle = "Yu En Design | Website under construction";
+const allPosts = await Astro.glob('../pages/work/*.md');
+const pageTittle = "Work";
 ---
 
 
-<PlaceholderLayout pageTittle={pageTittle}>
-	<h1 style="font-family: 'Merriweather';" class="text-5xl mt-24">Website<br><span class="pl-2">under</span><br><span class="pl-2">construction</span></h1>
-	<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari", "你好", "안녕하세요", "こんにちは", "Bonjour", "Helló", "Hei"]} />
-</PlaceholderLayout>
-
+<BaseLayout pageTittle={pageTittle}>
+  <ul class="flex flex-wrap list-none no-underline px-0">
+    {allPosts.map((post)=> <li class="py-5 px-0">
+      <BlogPost url={post.url}
+      title={post.frontmatter.title}
+      image={post.frontmatter.image}
+      description={post.frontmatter.description}
+      />
+      </li>)}
+  </ul>
+</BaseLayout>
