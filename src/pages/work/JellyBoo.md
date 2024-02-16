@@ -6,7 +6,7 @@ pubDate: 2022-07-01
 description: 'Decentralized VPNs project'
 author: 'R'
 image:
-    url: '../../src/assets/jellyboo/cover.png'
+    url: '../src/assets/jellyboo/cover.png'
     alt: 'Jelly boo'
 tags: ["brand deisgn", "illustrations", "product", "landing page development"]
 ---
