@@ -6,7 +6,7 @@ pubDate: 2022-07-01
 description: 'Decentralized large storage SaaS project'
 author: 'R'
 image:
-    url: '../../src/assets/mineral/cover.png'
+    url: '/assets/mineral/cover.png'
     alt: 'Mineral'
 tags: ["brand deisgn", "illustrations", "product", "landing page development", "dashboard UI and UX design", "design system"]
 ---
@@ -42,25 +42,25 @@ Its primary objective was to harness the power of decentralized blockchain techn
 <br><br>
 
 <div class="flex justify-start items-start w-full gap-2 mb-8">
-    <img class="w-full object-contain" src="../../src/assets/mineral/mineral-1.png" />
+    <Image class="w-full object-contain" src="/assets/mineral/mineral-1.png" />
 </div>
 <div class="flex justify-start items-start w-full gap-2 mb-8">
-    <img class="w-full object-contain" src="../../src/assets/mineral/mineral-2.png" />
+    <Image class="w-full object-contain" src="/assets/mineral/mineral-2.png" />
 </div>
 <div class="flex justify-start items-start w-full gap-2 mb-8">
-    <img class="w-full object-contain" src="../../src/assets/mineral/mineral-2-1.png" />
+    <Image class="w-full object-contain" src="/assets/mineral/mineral-2-1.png" />
 </div>
 <div class="flex justify-start items-start w-full gap-2 mb-8">
-    <img class="w-full object-contain" src="../../src/assets/mineral/mineral-3.png" />
+    <Image class="w-full object-contain" src="/assets/mineral/mineral-3.png" />
 </div>
 <div class="flex justify-start items-start w-full gap-2 mb-8">
-    <img class="w-full object-contain" src="../../src/assets/mineral/mineral-5.png" />
+    <Image class="w-full object-contain" src="/assets/mineral/mineral-5.png" />
 </div>
 <div class="flex justify-start items-start w-full gap-2 mb-8">
-    <img class="w-2/3 object-contain" src="../../src/assets/mineral/mineral-4.png" />
-    <img class="w-1/3 object-contain" src="../../src/assets/mineral/mineral-6.png" />
+    <Image class="w-2/3 object-contain" src="/assets/mineral/mineral-4.png" />
+    <Image class="w-1/3 object-contain" src="/assets/mineral/mineral-6.png" />
 </div>
 
 <div class="flex justify-start items-start w-full gap-2 mb-8">
-    <img class="w-full object-contain" src="../../src/assets/mineral/mineral-7.png" />
+    <Image class="w-full object-contain" src="/assets/mineral/mineral-7.png" />
 </div>

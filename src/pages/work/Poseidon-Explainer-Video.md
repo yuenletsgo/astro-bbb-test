@@ -6,7 +6,7 @@ pubDate: 2022-07-01
 description: 'Motion graphics explainer video'
 author: 'R'
 image:
-    url: '../../src/assets/poseidon/cover.png'
+    url: '/assets/poseidon/cover.png'
     alt: 'poseidon'
 tags: ["brand deisgn", "illustrations", "product", "landing page development", "dashboard UI and UX design", "design system"]
 ---

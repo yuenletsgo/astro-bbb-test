@@ -6,7 +6,7 @@ pubDate: 2022-07-01
 description: 'Global e-commerce online store'
 author: 'R'
 image:
-    url: '../../src/assets/simplekaffa/cover.png'
+    url: '/assets/simplekaffa/cover.png'
     alt: 'simplekaffa'
 tags: ["brand deisgn", "illustrations", "product", "landing page development", "dashboard UI and UX design", "design system"]
 ---
@@ -48,5 +48,5 @@ Its primary objective was to harness the power of decentralized blockchain techn
 <br><br><br>
 
 <div class="flex justify-start items-start w-full gap-2 mb-8">
-    <img class="w-full object-contain" src="../../src/assets/simplekaffa/simplekaffa-1.png" />
+    <Image class="w-full object-contain" src="/assets/simplekaffa/simplekaffa-1.png" />
 </div>
