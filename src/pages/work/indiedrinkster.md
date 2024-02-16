@@ -48,7 +48,7 @@ I love the outcome of the product listing sections. In the background, I use CSS
 <br>
 
 <div class="flex justify-start items-start w-full gap-2 mb-8">
-    <img class="w-full object-contain" src="../../src/assets/indiedrinkster/indiedrinkster-1.png" />
+    <Image class="w-full object-contain" src="/assets/indiedrinkster/indiedrinkster-1.png" />
 </div>
 <div class="flex justify-start items-start w-full gap-2 mb-8">
     <img class="w-full object-contain" src="../../src/assets/indiedrinkster/indiedrinkster-3.png" />
