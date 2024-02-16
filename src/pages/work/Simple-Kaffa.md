@@ -12,11 +12,6 @@ tags: ["brand deisgn", "illustrations", "product", "landing page development", "
 ---
 
 
-## Overview
-simplekaffa was an innovative, experimental product.<br>
-Its primary objective was to harness the power of decentralized blockchain technology, specifically utilizing nodes, to create a revolutionary storage solution. This was intended to provide ample storage space specifically for users who needed to store large files. With the ability to accommodate substantial amounts of data, simplekaffa was poised to redefine how users managed and stored their data in a secure, decentralized manner.
-
-<br>
 
 ## Role
 <ul class="pl-8 marker:text-slate-400 dark:marker:text-neutral-500">
