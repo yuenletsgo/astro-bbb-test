@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import PlaceholderLayout from '../layouts/PlaceholderLayout.astro';
 // import ReactMotion from '../components/ReactMotion.jsx';
 
 const pageTittle = "About";
@@ -14,11 +14,11 @@ const skills = ["Product Design", "Service Design", "UI/UX", "Motion Prototyping
 
 ---
 
-<BaseLayout pageTittle={pageTittle}>
+<PlaceholderLayout pageTittle={pageTittle}>
 	<!-- <ReactMotion client:load /> -->
 	<div class="text-lg leading-7 mt-2 md:mt-8 mb-16 text-slate-800 dark:text-neutral-50">
 		<div>
-			Yu En is a UI/UX designer with over 7 years of experience and a self-taught front-end developer (and have recently dip my toes into service design). Specializing in web design, e-commerce web design and developing new tech/business concept products. I loves engaging with clients to understand their current business needs and pain points, and then translating them into usable system flows. Collaborate with front-end and back-end engineers, taking into consideration technical limitations, to deliver product selections to project managers and stakeholders. I starts from ideation/business goals, moves on to concept design and production, conducts tests, analyzes data, and continuously improves the product.
+			Yu En is a UI/UX designer with 7+ years of experience and a self-taught front-end developer (and have recently dip my toes into service design). Specializing in web design, e-commerce web design and developing new tech/business concept products. I loves engaging with clients to understand their current business needs and pain points, and then translating them into usable system flows. Collaborate with front-end and back-end engineers, taking into consideration technical limitations, to deliver product selections to project managers and stakeholders. I starts from ideation/business goals, moves on to concept design and production, conducts tests, analyzes data, and continuously improves the product.
 		</div>
 
 		<ul class="pl-8 marker:text-slate-400 dark:marker:text-neutral-500">
@@ -42,6 +42,6 @@ const skills = ["Product Design", "Service Design", "UI/UX", "Motion Prototyping
 	</div>
 	<div class="mt-36">
 		<p class="text-2xl md:text-3xl">See something of interest ?</p>
-		<a href="/contact-test" style="font-family: 'Merriweather', serif; font-weight: 300;" class="text-xl md:text-2xl text-neutral-400">Drop me a line !</a>
+		<a href="mailto:hello@yuenw.design?subject=Say Hi to Yu En&body=Hello there! 💖 Super excited to see you! Thanks a ton for giving this button a click!🌟 I’m looking forward to talking to you." style="font-family: 'Merriweather', serif; font-weight: 300;" class="text-xl md:text-2xl text-neutral-400">Drop me a line !</a>
 	</div>
-</BaseLayout>	
+</PlaceholderLayout>	
