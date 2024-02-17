@@ -21,10 +21,10 @@ Its primary objective was to harness the power of decentralized blockchain techn
 ## Role
 <ul class="pl-8 marker:text-slate-400 dark:marker:text-neutral-500">
    <li class="mb-3">Brand designer</li>
-   <li class="mb-3">Product design</li>
-   <li class="mb-3">UI/UX design</li>
+   <li class="mb-3">Product designer</li>
+   <li class="mb-3">UI/UX designer</li>
    <li class="mb-3">Front-end developer</li>
-   <li class="mb-3">Service design</li>
+   <li class="mb-3">Service designer</li>
 </ul>
 
 <br>

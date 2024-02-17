@@ -14,7 +14,7 @@ tags: ["brand deisgn", "illustrations", "product", "landing page development", "
 
 ## Role
 <ul class="pl-8 marker:text-slate-400 dark:marker:text-neutral-500">
-   <li class="mb-3">Motion graphics design</li>
+   <li class="mb-3">Motion graphics designer</li>
    <li class="mb-3">Illustrator</li>
    <li class="mb-3">Video editor</li>
    

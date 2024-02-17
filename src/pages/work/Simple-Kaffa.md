@@ -15,7 +15,7 @@ tags: ["brand deisgn", "illustrations", "product", "landing page development", "
 
 ## Role
 <ul class="pl-8 marker:text-slate-400 dark:marker:text-neutral-500">
-   <li class="mb-3">UI/UX design</li>
+   <li class="mb-3">UI/UX designer</li>
    <li class="mb-3">Front-end developer</li>
 </ul>
 
