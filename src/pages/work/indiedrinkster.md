@@ -14,7 +14,7 @@ tags: ["brand deisgn", "illustrations", "product", "landing page development", "
 
 ## Role
 <ul class="pl-8 marker:text-slate-400 dark:marker:text-neutral-500">
-   <li class="mb-3">UI/UX designer</li>
+   <li class="mb-3">UX/UI designer</li>
    <li class="mb-3">Front-end developer</li>
 </ul>
 
@@ -23,7 +23,7 @@ tags: ["brand deisgn", "illustrations", "product", "landing page development", "
 ## Service
 <ul class="pl-8 marker:text-slate-400 dark:marker:text-neutral-500">
    <li class="mb-3">Creating wireframe is used to align the project's scope, flow, features, and information architecture.</li>
-   <li class="mb-3">UI/UX design.</li>
+   <li class="mb-3">UX/UI design.</li>
    <li class="mb-3">Service design.</li>
    <li class="mb-3">Convert front-end development into HTML/CSS/JS.</li>
 </ul>

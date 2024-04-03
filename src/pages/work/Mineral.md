@@ -22,7 +22,7 @@ Its primary objective was to harness the power of decentralized blockchain techn
 <ul class="pl-8 marker:text-slate-400 dark:marker:text-neutral-500">
    <li class="mb-3">Brand designer</li>
    <li class="mb-3">Product designer</li>
-   <li class="mb-3">UI/UX designer</li>
+   <li class="mb-3">UX/UI designer</li>
    <li class="mb-3">Front-end developer</li>
    <li class="mb-3">Service designer</li>
 </ul>
@@ -36,7 +36,7 @@ Its primary objective was to harness the power of decentralized blockchain techn
    <li class="mb-3">Create design system and UI components.</li>
    <li class="mb-3">Create site prototypes and the final design in Figma.</li>
    <li class="mb-3">Landing page design & development.</li>
-   <li class="mb-3">Dashboard UI/UX design.</li>
+   <li class="mb-3">Dashboard UX/UI design.</li>
 </ul>
 
 <br><br>

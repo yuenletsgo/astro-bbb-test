@@ -20,7 +20,7 @@ This is an eCommerce website built on Shopify. The client required a new framewo
 ## Role
 <ul class="pl-8 marker:text-slate-400 dark:marker:text-neutral-500">
    <li class="mb-3">Project manager</li>
-   <li class="mb-3">UI/UX consulter</li>
+   <li class="mb-3">UX/UI consulter</li>
    <li class="mb-3">front-end developer</li>
 </ul>
 
@@ -29,7 +29,7 @@ This is an eCommerce website built on Shopify. The client required a new framewo
 ## Service
 <ul class="pl-8 marker:text-slate-400 dark:marker:text-neutral-500">
    <li class="mb-3">Project management.</li>
-   <li class="mb-3">UI/UX consultor.</li>
+   <li class="mb-3">UX/UI consultor.</li>
    <li class="mb-3">Quality control.</li>
    <li class="mb-3">Front-end development.</li>
 </ul>
