@@ -14,63 +14,65 @@ const {pageTittle} = Astro.props;
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,600;1,400;1,500;1,600&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="og:title" content={pageTittle} />
-		<meta name="og:image" content="https://github.com/yuenletsgo/astro-bbb-test/blob/main/public/assets/ogimage.png" />
-		<title>{pageTittle}</title>
-		<ViewTransitions />
-		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
-		<script is:inline src="https://code.jquery.com/jquery-3.6.0.js"></script>
-		<script is:inline src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
-		<!-- Google tag (gtag.js) -->
-		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-X8ZCNE99LV"></script>
-		<script is:inline>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,600;1,400;1,500;1,600&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="og:title" content={pageTittle} />
+    <meta name="og:image" content="https://github.com/yuenletsgo/astro-bbb-test/blob/main/public/assets/ogimage.png" />
+    <title>{pageTittle}</title>
+    <ViewTransitions />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+    <script is:inline src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script is:inline src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-X8ZCNE99LV"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-			gtag('config', 'G-X8ZCNE99LV');
-		</script>
-		<!-- Google Tag Manager -->
-		<script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','GTM-TZTJS76W');</script>
-		<!-- End Google Tag Manager -->
-		<script is:inline type="text/javascript">
-			(function(c,l,a,r,i,t,y){
-					c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-					t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-					y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-			})(window, document, "clarity", "script", "l2oic15ug6");
-		</script>
-		</head>
-	<body class="-mt-[36px] bg-neutral-50 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-50">
-		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZTJS76W"
-		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-		<!-- End Google Tag Manager (noscript) -->
-		<Header />
-		<ThemeIcon />
-		<Bio />
-		<!-- <h1 class="pt-20" transition:animate={fade({ duration: '2s' })}>My first Astro project.. update:13:12 {pageTittle}</h1> -->
-		<main transition:animate="slide" class="w-full px-6 max-w-[1028px] m-auto pt-10">
-			<slot />
-		</main>
-		<div class="-mb-[3rem] md:-mb-40">
-			<Graggable />
-		</div>
-		<Footer />
-		<script>
-			import "../scripts/menu.js";
-		</script>
-	</body>
+      gtag('config', 'G-X8ZCNE99LV');
+    </script>
+    <!-- Google Tag Manager -->
+    <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TZTJS76W');</script>
+    <!-- End Google Tag Manager -->
+    <script is:inline type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "l2oic15ug6");
+    </script>
+    <!-- plausible tracking code -->
+    <script defer data-domain="yuenw.design" src="https://plausible.io/js/script.js"></script>		
+    </head>
+  <body class="-mt-[36px] bg-neutral-50 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-50">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZTJS76W"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <Header />
+    <ThemeIcon />
+    <Bio />
+    <!-- <h1 class="pt-20" transition:animate={fade({ duration: '2s' })}>My first Astro project.. update:13:12 {pageTittle}</h1> -->
+    <main transition:animate="slide" class="w-full px-6 max-w-[1028px] m-auto pt-10">
+      <slot />
+    </main>
+    <div class="-mb-[3rem] md:-mb-40">
+      <Graggable />
+    </div>
+    <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
+  </body>
 </html>
