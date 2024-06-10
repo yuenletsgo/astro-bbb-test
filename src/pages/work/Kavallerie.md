@@ -6,7 +6,7 @@ pubDate: 2022-07-01
 description: 'Ecommerce platform migration'
 author: 'R'
 image:
-    url: '/assets/kav/cover.png'
+    url: '/assets/kav/cover.webp'
     alt: 'Kavallerie'
 tags: ["brand deisgn", "illustrations", "product", "landing page development"]
 ---
@@ -40,11 +40,11 @@ This is an eCommerce website built on Shopify. The client required a new framewo
 <br><br><br>
 
 <div class="flex justify-start items-start w-full gap-2">
-    <Image class="w-1/2 object-contain" src="/assets/kav/kav-1.png" />
-    <Image class="w-1/2 object-contain" src="/assets/kav/kav-2.png" />
+    <Image class="w-1/2 object-contain" src="/assets/kav/kav-1.webp" />
+    <Image class="w-1/2 object-contain" src="/assets/kav/kav-2.webp" />
 </div>
 
 
 <div class="flex justify-start items-start w-full gap-2">
-    <Image class="w-full object-contain" src="/assets/kav/kav-3.png" />
+    <Image class="w-full object-contain" src="/assets/kav/kav-3.webp" />
 </div>

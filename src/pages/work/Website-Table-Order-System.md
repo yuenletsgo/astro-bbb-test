@@ -6,7 +6,7 @@ pubDate: 2022-07-01
 description: 'Table ordering system for both customs and stuffs'
 author: 'R'
 image:
-    url: '/assets/table-order/cover.png'
+    url: '/assets/table-order/cover.webp'
     alt: 'Mineral'
 tags: ["brand deisgn", "illustrations", "product", "landing page development", "dashboard UI and UX design", "design system"]
 ---
@@ -40,17 +40,17 @@ tags: ["brand deisgn", "illustrations", "product", "landing page development", "
 <br><br><br>
 
 <div class="flex justify-start items-start w-full gap-3 mb-4">
-    <Image class="w-1/3 object-contain" src="/assets/table-order/table-order-1.png" />
-    <Image class="w-1/3 object-contain" src="/assets/table-order/table-order-2.png" />
-    <Image class="w-1/3 object-contain" src="/assets/table-order/table-order-3.png" />
+    <Image class="w-1/3 object-contain" src="/assets/table-order/table-order-1.webp" />
+    <Image class="w-1/3 object-contain" src="/assets/table-order/table-order-2.webp" />
+    <Image class="w-1/3 object-contain" src="/assets/table-order/table-order-3.webp" />
 </div>
 
 <div class="flex justify-start items-start w-full gap-2 mb-4">
-    <Image class="w-full object-contain" src="/assets/table-order/table-order-4.png" />
+    <Image class="w-full object-contain" src="/assets/table-order/table-order-4.webp" />
 </div>
 <div class="flex justify-start items-start w-full gap-2 mb-4">
-    <Image class="w-full object-contain" src="/assets/table-order/table-order-5.png" />
+    <Image class="w-full object-contain" src="/assets/table-order/table-order-5.webp" />
 </div>
 <div class="flex justify-start items-start w-full gap-2">
-    <Image class="w-full object-contain" src="/assets/table-order/table-order-6.png" />
+    <Image class="w-full object-contain" src="/assets/table-order/table-order-6.webp" />
 </div>

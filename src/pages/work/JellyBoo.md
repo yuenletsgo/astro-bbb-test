@@ -6,7 +6,7 @@ pubDate: 2022-07-01
 description: 'Decentralized VPNs project'
 author: 'R'
 image:
-    url: '/assets/jellyboo/cover.png'
+    url: '/assets/jellyboo/cover.webp'
     alt: 'Jelly boo'
 tags: ["brand deisgn", "illustrations", "product", "landing page development"]
 ---
@@ -38,18 +38,18 @@ Represents an innovative, decentralized VPN project. It's a venture that require
 <br><br>
 
 <div class="flex justify-start items-start w-full gap-2">
-    <Image class="w-1/2 object-contain" src="/assets/jellyboo/jellyboo-1.png" />
-    <Image class="w-1/2 object-contain" src="/assets/jellyboo/jellyboo-2.png" />
+    <Image class="w-1/2 object-contain" src="/assets/jellyboo/jellyboo-1.webp" />
+    <Image class="w-1/2 object-contain" src="/assets/jellyboo/jellyboo-2.webp" />
 </div>
 
 <div class="flex justify-start items-start w-full gap-2">
-    <Image class="w-1/2 object-contain" src="/assets/jellyboo/jellyboo-3.png" />
-    <Image class="w-1/2 object-contain" src="/assets/jellyboo/jellyboo-4.png" />
+    <Image class="w-1/2 object-contain" src="/assets/jellyboo/jellyboo-3.webp" />
+    <Image class="w-1/2 object-contain" src="/assets/jellyboo/jellyboo-4.webp" />
 </div>
 
 <div class="flex justify-start items-start w-full gap-2">
-    <Image class="w-full object-contain" src="/assets/jellyboo/jellyboo-5.png" />
+    <Image class="w-full object-contain" src="/assets/jellyboo/jellyboo-5.webp" />
 </div>
 <div class="flex justify-start items-start w-full gap-2">
-    <Image class="w-full object-contain" src="/assets/jellyboo/jellyboo-6.png" />
+    <Image class="w-full object-contain" src="/assets/jellyboo/jellyboo-6.webp" />
 </div>

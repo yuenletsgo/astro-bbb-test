@@ -6,7 +6,7 @@ pubDate: 2022-07-01
 description: 'Global e-commerce online store'
 author: 'R'
 image:
-    url: '/assets/simplekaffa/cover.png'
+    url: '/assets/simplekaffa/cover.webp'
     alt: 'simplekaffa'
 tags: ["brand deisgn", "illustrations", "product", "landing page development", "dashboard UI and UX design", "design system"]
 ---
@@ -43,5 +43,5 @@ tags: ["brand deisgn", "illustrations", "product", "landing page development", "
 <br><br><br>
 
 <div class="flex justify-start items-start w-full gap-2 mb-8">
-    <Image class="w-full object-contain" src="/assets/simplekaffa/simplekaffa-1.png" />
+    <Image class="w-full object-contain" src="/assets/simplekaffa/simplekaffa-1.webp" />
 </div>

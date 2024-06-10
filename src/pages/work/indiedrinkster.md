@@ -6,7 +6,7 @@ pubDate: 2022-07-01
 description: 'Wine e-commerce site with verified membership.'
 author: 'R'
 image:
-    url: '/assets/indiedrinkster/cover.png'
+    url: '/assets/indiedrinkster/cover.webp'
     alt: 'indiedrinkster'
 tags: ["brand deisgn", "illustrations", "product", "landing page development", "dashboard UI and UX design", "design system"]
 ---
@@ -48,11 +48,11 @@ I love the outcome of the product listing sections. In the background, I use CSS
 <br>
 
 <div class="flex justify-start items-start w-full gap-2 mb-8">
-    <Image class="w-full object-contain" src="/assets/indiedrinkster/indiedrinkster-1.png" />
+    <Image class="w-full object-contain" src="/assets/indiedrinkster/indiedrinkster-1.webp" />
 </div>
 <div class="flex justify-start items-start w-full gap-2 mb-8">
-    <Image class="w-full object-contain" src="/assets/indiedrinkster/indiedrinkster-3.png" />
+    <Image class="w-full object-contain" src="/assets/indiedrinkster/indiedrinkster-3.webp" />
 </div>
 <div class="flex justify-start items-start w-full gap-2 mb-8">
-    <Image class="w-full object-contain" src="/assets/indiedrinkster/indiedrinkster-2.png" />
+    <Image class="w-full object-contain" src="/assets/indiedrinkster/indiedrinkster-2.webp" />
 </div>
