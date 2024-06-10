@@ -1,8 +1,7 @@
 ---
 import '../styles/global.css';
-
-const {testWord} = Astro.props;
 ---
+
 <div x-data="{ open: false }">
   <div :class=" open ? 'w-96' : 'w-32' " class="z-50 nav-links flex items-center gap-8 bg-neutral-900 dark:bg-neutral-100 px-8 py-2 rounded-full fixed top-10 scale-150 origin-top-left transition-all duration-500">
     <a class='text-white dark:text-black' href="/">R</a>
