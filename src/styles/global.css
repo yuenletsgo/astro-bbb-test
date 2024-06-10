@@ -6,8 +6,6 @@ html {
 body {
   margin: 0 auto;
   width: 100%;
-  /* max-width: 1440px; */
-  /* padding: 1rem 5vw; */
   line-height: 1.5;
   position: relative;
   overflow-x: hidden;
@@ -35,16 +33,6 @@ p, p>li {
   font-family: 'Merriweather', serif;
   font-weight: 100;
 }
-/* html.dark {
-  background-color: #0d0950;
-  color: #fff;
-} */
-
-/* .dark .nav-links a {
-  color: #fff;
-} */
-
-/* nav styles */
 
 .nav-links a {
   display: block;
