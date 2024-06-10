@@ -14,7 +14,6 @@ export default {
 			},
 		},
 	},
-	purge: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'], // Add purge option
 	plugins: [
 		plugin(function({ addBase, theme }) {
 			addBase({
