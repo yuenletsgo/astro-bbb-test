@@ -11,6 +11,7 @@ image:
 tags: ["brand deisgn", "illustrations", "product", "landing page development"]
 ---
 
+<Image class="w-full object-contain" srcset="/assets/kav/cover.webp?w=1000 1000w, /assets/jellyboo/cover.webp?w=400 400w" sizes="400w" loading="lazy" />
 
 ## Overview
 This is an eCommerce website built on Shopify. The client required a new framework (theme) for the site. Our challenge was to migrate the old style into the new framework while also adding new features to ensure a smooth user experience. My role involved supervising the teams, collaborating with the brand manager, and adapting to the client's needs. Our aim was to deliver the project on time and at a high quality, while ensuring we had no outstanding "bug to fix" tickets.

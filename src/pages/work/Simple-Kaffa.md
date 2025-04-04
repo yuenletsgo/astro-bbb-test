@@ -11,7 +11,13 @@ image:
 tags: ["brand deisgn", "illustrations", "product", "landing page development", "dashboard UI and UX design", "design system"]
 ---
 
-
+<Image
+  class="w-full object-contain lazyload"
+  data-sizes="auto"
+  srcset="/assets/simplekaffa/cover.webp?w=1000 1000w, /assets/jellyboo/cover.webp?w=400 400w"
+  sizes="400w"
+  loading="lazy"
+/>
 
 ## Role
 <ul class="pl-8 marker:text-slate-400 dark:marker:text-neutral-500">
