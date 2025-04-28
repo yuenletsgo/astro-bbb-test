@@ -59,11 +59,13 @@ const {pageTittle} = Astro.props;
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZTJS76W"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <Header />
     <ThemeIcon />
     <Bio />
     <!-- <h1 class="pt-20" transition:animate={fade({ duration: '2s' })}>My first Astro project.. update:13:12 {pageTittle}</h1> -->
     <main transition:animate="slide" class="w-full px-6 max-w-[1028px] m-auto pt-10">
-      <img src="/assets/yuendesign202504.webp" alt="im redoing my website, alone with my cat" class="w-full" />
+      <slot />
+      <!-- <img src="/assets/yuendesign202504.webp" alt="im redoing my website, alone with my cat" class="w-full" /> -->
     </main>
     <div class="-mb-[3rem] md:-mb-40">
       <Graggable />

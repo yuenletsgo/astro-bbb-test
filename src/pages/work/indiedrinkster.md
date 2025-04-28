@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 
 title: "Indie Drinkster"
 pubDate: 2022-07-01
+order: 5
 description: "Wine e-commerce site with verified membership."
 author: "R"
 image:
@@ -20,9 +21,9 @@ tags:
 ---
 
 <picture class="w-full object-contain">
-  <source srcset="/assets/indiedrinkster/cover2x.webp" media="(min-width: 601px)" />
-  <source srcset="/assets/indiedrinkster/cover1x.webp" media="(max-width: 600px)" />
-  <img class="w-full object-contain" src="/assets/indiedrinkster/cover2x.webp" sizes="100vw" loading="lazy" />
+  <!-- <source srcset="/assets/indiedrinkster/cover2x.webp" media="(min-width: 601px)" />
+  <source srcset="/assets/indiedrinkster/cover1x.webp" media="(max-width: 600px)" /> -->
+  <img class="w-full object-contain" src="/assets/indiedrinkster/cover.webp" sizes="100vw" loading="lazy" />
 </picture>
 <Image
   class="w-full object-contain lazyload"

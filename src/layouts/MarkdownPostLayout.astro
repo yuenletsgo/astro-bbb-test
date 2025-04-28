@@ -6,7 +6,7 @@ const { frontmatter } = Astro.props;
 <BlogListPageLayout pageTittle={frontmatter.title}>
   <div class="h-[12rem]"></div>
     <h1 class="mt-5 px-5">{frontmatter.title}</h1>
-    <h2 class="text-slate-400 mb-6 text-lg px-5">－ {frontmatter.description}</h2>
+    <h2 class="text-neutral-400 mb-6 text-lg px-5">－ {frontmatter.description}</h2>
     <div class="px-5 mt-10">
       <slot />
       <div class="mt-10">

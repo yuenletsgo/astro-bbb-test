@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 
 title: 'Mineral'
 pubDate: 2022-07-01
+order: 42
 description: 'Decentralized large storage SaaS project'
 author: 'R'
 image:

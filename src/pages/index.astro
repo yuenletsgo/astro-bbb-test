@@ -1,49 +1,28 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { works } from '../data/works';
-const pageTittle = "Yu En Design";
+import BlogPost from '../layouts/BlogPost.astro';
+
+const allPosts = await Astro.glob('../pages/work/*.md');
+const sortedPosts = allPosts.sort((a, b) => {
+  const orderA = a.frontmatter.order || Infinity; // 如果没有 order 属性，设为最大值
+  const orderB = b.frontmatter.order || Infinity;
+  return orderA - orderB;
+});
+
+
+const pageTittle = "Work | Yu En Design";
 ---
 
 
 <BaseLayout pageTittle={pageTittle}>
-  {works.map((work) => (
-    <article class="work-card">
-      <h2>{work.title}</h2>
-      
-      {/* Display featured image first */}
-      {work.images
-        .filter(img => img.isFeatured)
-        .map(img => (
-          <img
-            src={img.url}
-            alt={img.alt}
-            class="featured-image"
-          />
-        ))
-      }
-      
-      <div class="tags">
-        {work.tags.map((tag) => (
-          <span class="tag">{tag}</span>
-        ))}
-      </div>
-      
-      <p>{work.description}</p>
-      
-      {/* Display gallery of additional images */}
-      <div class="work-gallery">
-        {work.images
-          .filter(img => !img.isFeatured)
-          .map(img => (
-            <figure>
-              <img src={img.url} alt={img.alt} />
-              {img.caption && <figcaption>{img.caption}</figcaption>}
-            </figure>
-          ))
-        }
-      </div>
-      
-      {work.memory && <p class="memory">{work.memory}</p>}
-    </article>
-  ))}
+  <!-- archvied-layout -->
+  <ul class="flex flex-wrap list-none no-underline px-0">
+    {sortedPosts.map((post)=> <li class="py-5 px-0">
+      <BlogPost url={post.url}
+      title={post.frontmatter.title}
+      image={post.frontmatter.image}
+      description={post.frontmatter.description}
+      />
+      </li>)}
+  </ul>
 </BaseLayout>
